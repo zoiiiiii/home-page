@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){document.getElementsByTagName("main")[0].classList.add("fadeIn"),document.getElementsByTagName("footer")[0].classList.add("fadeIn")})
