@@ -8,19 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/index.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-    <div class="card">
-        <main>
+    <main>
+        <div class="card">
             <div class="card-left">
                 <div class="author">
                     <img class="avatar" src="./assets/img/avatar.jpg">
                     <h1>CodeKZero</h1>
                     <p class="subhead">Geek</p>
                 </div>
-                <div class="overlay"></div>
             </div>
             <div class="card-right">
                 <p>
@@ -88,14 +87,14 @@
                     </a>
                 </div>
             </div>
-        </main>
-        <!-- 引用搜狐接口实现用户的IP与设备的显示 -->
-        <footer class="footer ">
+        </div>
+        <footer class="footer">
             <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-            <script src="./assets/js/sohuapi.min.js"></script>
+            <!-- 引用搜狐接口实现用户的IP与设备的显示 -->
+            <script src="./assets/js/sohuapi.js"></script>
         </footer>
-    </div>
-    <script src="./assets/js/index.min.js"></script>
+</main>
+<script src="./assets/js/index.js"></script>
 </body>
 
 </html>
