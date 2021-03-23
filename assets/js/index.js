@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded", (function () { document.getElementsByClassName("card")[0].classList.add("fadeIn"), document.getElementsByTagName("footer")[0].classList.add("fadeIn") }));
+document.addEventListener("DOMContentLoaded",(function(){document.getElementsByClassName("card")[0].classList.add("fadeIn"),document.getElementsByTagName("footer")[0].classList.add("fadeIn")}));
