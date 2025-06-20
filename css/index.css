@@ -1,200 +1,195 @@
 body,
-        html {
-            height: 100%;
-            box-sizing: border-box;
-        }
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            color: #7c8891;
-            font: 16px/22px -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
-            background: #2e3236;
-        }
+body {
+    margin: 0;
+    color: #7c8891;
+    font: 16px/22px -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #2e3236;
+}
 
-        .card {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+.card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        main {
-            position: relative;
-            max-width: 700px;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgb(0 0 0 / 27%);
-            opacity: 0;
-            transition: transform 1s ease, opacity 1s ease;
-            transform: translateY(-40px);
-        }
+main {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 27%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateY(-40px);
+}
 
-        main>div {
-            box-sizing: border-box;
-        }
+main>div {
+    box-sizing: border-box;
+}
 
-        @media(max-width:768px) {
-            body {
-                padding: 30px;
-            }
+@media(max-width:768px) {
+    body {
+        padding: 30px;
+    }
 
-            .card {
-                width: 100%;
-            }
-        }
+    .card {
+        width: 100%;
+    }
+}
 
-        @media(max-width:420px) {
-            body {
-                padding: 10px;
-            }
+@media(max-width:420px) {
+    body {
+        padding: 10px;
+    }
 
-            .card .cont {
-                padding: 40px 28px;
-            }
-        }
+    .card .cont {
+        padding: 40px 28px;
+    }
+}
 
-        .card .info {
-            position: absolute;
-            width: 31.2%;
-            padding: 40px 0;
-            color: #fff;
-            text-align: center;
-            /* background-color: #0d5b7e; */
-            background-color: #4a0280;
-            text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
-        }
+.card .info {
+    position: absolute;
+    width: 31.2%;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    /* background-color: #0d5b7e; */
+    background-color: #4a0280;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+}
 
-        .card .cont {
-            margin-left: 31.2%;
-            padding: 50px;
-            background: #fff;
-        }
+.card .cont {
+    margin-left: 31.2%;
+    padding: 50px;
+    background: #fff;
+}
 
-        @media(max-width:670px) {
-            .card .info {
-                position: relative;
-                width: 100%;
-            }
+@media(max-width:670px) {
+    .card .info {
+        position: relative;
+        width: 100%;
+    }
 
-            .card .cont {
-                margin: 0;
-            }
-        }
+    .card .cont {
+        margin: 0;
+    }
+}
 
-        @media(min-width:670px) {
-            .card .info {
-                height: 100%;
-            }
-        }
+@media(min-width:670px) {
+    .card .info {
+        height: 100%;
+    }
+}
 
-        .card .info h1 {
-            font-size: 24px;
-            margin-bottom: 8px;
-        }
+.card .info h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
 
-        .card .info .avatar {
-            width: 96px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-        }
+.card .info .avatar {
+    width: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
 
-        .card .info .subhead {
-            margin: 0;
-            font-size: 14px;
-        }
+.card .info .subhead {
+    margin: 0;
+    font-size: 14px;
+}
 
-        .card .cont p {
-            margin: 0;
-            line-height: 28px;
-            word-wrap: break-word;
-        }
+.card .cont p {
+    margin: 0;
+    line-height: 28px;
+    word-wrap: break-word;
+}
 
-        .card .cont a {
-            text-decoration: none;
-        }
+.card .cont a {
+    text-decoration: none;
+}
 
-        .icon {
-            position: relative;
-        }
+.icon {
+    position: relative;
+}
 
-        .icon svg {
-            width: 20px;
-            height: 20px;
-        }
+.icon:focus::after,
+.icon:hover::after {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
 
-        .icon:focus::after,
-        .icon:hover::after {
-            opacity: 1;
-            transform: translate(-50%, -.2rem);
-        }
-
-        .icon::after {
-            content: attr(data-title);
-            display: block;
-            position: absolute;
-            left: 50%;
-            top: 100%;
-            z-index: 1;
-            max-width: 100px;
-            padding: 3px 6px;
-            color: #fafafa;
-            font-size: 14px;
-            background: rgba(48, 55, 66, .6);
-            border-radius: 4px;
-            margin-top: 4px;
-            opacity: 0;
-            pointer-events: none;
+.icon::after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 16px;
+    z-index: 1;
+    max-width: 100px;
+    padding: 3px 6px;
+    color: #fafafa;
+    font-size: 14px;
+    background: rgba(48, 55, 66, .6);
+    border-radius: 4px;
+    margin-top: 7px;
+    opacity: 0;
+    /* pointer-events: none;
             white-space: pre;
             text-overflow: ellipsis;
-            overflow: hidden;
-            transform: translate(-50%, .4rem);
-            transition: opacity .2s, transform .2s;
-        }
+            overflow: hidden; */
+    transform: translate(-50%, 5px);
+    transition: opacity .2s, transform .2s;
+}
 
-        .link {
-            padding-top: 32px;
-            text-align: center;
-        }
+.link {
+    padding-top: 32px;
+    text-align: center;
+}
 
-        .link i {
-            margin: 0 10px;
-        }
+.link i {
+    margin: 0 10px;
+}
 
-        .link a {
-            color: #7c8891;
-        }
+.link a {
+    color: #7c8891;
+}
 
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #c5cbce;
-            opacity: 0;
-            transition: transform 1s ease, opacity 1s ease;
-            transform: translateY(40px);
-        }
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #c5cbce;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateY(40px);
+}
 
-        /* 向下渐变动画 */
-        .fadeIn {
-            opacity: 1;
-            transform: translateY(0);
-            transition: transform 1s ease, opacity 1s ease;
-        }
+/* 向下渐变动画 */
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s ease, opacity 1s ease;
+}
 
-        main.fadeIn {
-            animation: fadeIn 1s ease forwards;
-        }
+main.fadeIn {
+    animation: fadeIn 1s ease forwards;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
