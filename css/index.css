@@ -120,6 +120,11 @@ body,
             position: relative;
         }
 
+        .icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
         .icon:focus::after,
         .icon:hover::after {
             opacity: 1;
@@ -171,6 +176,7 @@ body,
             transform: translateY(40px);
         }
 
+        /* 向下渐变动画 */
         .fadeIn {
             opacity: 1;
             transform: translateY(0);
