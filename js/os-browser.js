@@ -98,4 +98,4 @@ function getBrowser() {
 
 
 // 页面加载完成后执行
-document.write( getOS() +'/'+ getBrowser())
+document.write(returnCitySN["cip"] +' ' + getOS() +'/'+ getBrowser())
